@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <nav id="navbar">
+        <header>
+          <h1>HTML Table Documentation</h1>
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#HTML_Tables">HTML Tables</a></li>
+          <li><a class="nav-link" href="#HTML_Border">HTML Border</a></li>
+          <li><a class="nav-link" href="#Sizes">Sizes</a></li>
+          <li><a class="nav-link" href="#Headers">Headers</a></li>
+          <li><a class="nav-link" href="#Padding_&_Spacing">Padding & Spacing</a></li>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="HTML_Tables">
+        <header>
+          <h1>HTML Tables</h1>
+        </header>
+          <p>HTML tables allow web developers to arrange data into rows and columns. </p>
+          <p>A table in HTML consists of table cells inside rows and columns.For Example,
+            <ul>
+              <li>Table Rows</li>
+              <li>Table Columns</li>
+            </ul>
+          </p>
+      </section>
+      <section class="main-section" id="HTML_Border">
+        <header>
+          <h1>HTML Border</h1>
+        </header>
+          <p>HTML tables can have borders of different styles and shapes.
+            <ul>
+              <li>Collapsed Table Borders:
+To avoid having double borders like in the example above, set the CSS border-collapse property to collapse. </li>
+              <li>Style Table Borders:
+If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:</li>
+              <li>Round Table Borders:
+With the border-radius property, the borders get rounded corners</li>
+            </ul>
+          </p>
+      </section>
+      <section class="main-section" id="Sizes">
+        <header>
+          <h1>Sizes</h1>
+        </header>
+          <p>HTML tables can have different sizes for each column, row or the entire table. </p>
+          <p>Use the style attribute with the width or height properties to specify the size of a table, row or column. </p>
+          <p>Using a percentage as the size unit for a width means how wide will this element be compared to its parent element, which in this case is the <body> element. </p>
+      </section>
+      <section class="main-section" id="Headers">
+        <header>
+          <h1>Headers</h1>
+        </header>
+          <p>By default, table headers are bold and centered.
+            To left-align the table headers, use the CSS text-align property: For example, <br>
+            <div class="Code">
+              <code>
+  th {
+  text-align: left;
+}
+              </code>
+            </div>
+          </p>
+          <p>You can have a header that spans over two or more columns. To do this, use the colspan attribute on the <b>th</b> element:,<br>
+            <div class="Code">
+            <code>
+            th Age th
+            </code>
+            </div>
+          </p>
+          <p>
+            To add a caption to a table, use the <b>caption</b> tag:,<br>
+            <div class="Code">
+              <code>
+                caption Monthly savings caption
+              </code>
+            </div>
+          </p>
+      </section>
+      <section class="main-section" id="Padding_&_Spacing">
+        <header>
+          <h1>Padding & Spacing</h1>
+        </header>
+        <p>HTML tables can adjust the padding inside the cells, and also the space between the cells. </p>
+        <p>Cell padding is the space between the cell edges and the cell content.
+
+By default the padding is set to 0.
+
+To add padding on table cells, use the CSS padding property: <br>
+          <div class="Code">
+            <code>
+              th, td {
+  padding: 15px;https://github.com/AllanVerse/Technical-Documentation
+}
+            </code>
+          </div>
+        </p>
+        <p>
+          o add padding only above the content, use the padding-top property.
+
+And the others sides with the padding-bottom, padding-left, and padding-right properties:. <br>
+          <div class="Code">
+            <code>
+              th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+            </code>
+          </div>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
